@@ -1,0 +1,143 @@
+<html lang="en">
+
+<head>
+    <title>Khin Me Me Latt</title>
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/rabbit.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body id="app" class="dark:bg-gray-900 dark:text-white">
+    <img id="loading-image" src="img/loading.gif" alt="Loading..." class="w-full h-full"/>
+    <div id="content" class="hidden">
+        <Navbar></Navbar>
+        <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 ml-60 mt-32 md:mt-16 lg:mt-16 mb-16 items-center">
+            <img src="img/rabbit.gif" class="md:mt-32 lg:mt-10 md:mb-10 lg:mb-5 md:w-10/12 lg:w-2/3 md:-ml-10 lg:pl-40">
+            <p class="md:-ml-10 -ml-4 mt-5 md:mt-1 lg:mt-1 typewrite font-lobster font-extrabold text-3xl"
+                data-period="2000" data-type='[ "I am Khin Me Me Latt!", "I am Creative!", "I Love Coding!" ]'>
+                <span class="wrap"></span>
+            </p>
+        </div>
+        <div class="lg:flex pt-5 pb-5 lg:justify-center lg:-mt-16 md:mt-20" id="jobs">
+            <div>
+                <i class="fab fa-js text-yellow-400"></i>Web Developer
+            </div>
+            <div>
+                <i class="fab fa-android text-blue-700"></i>Mobile Developer
+            </div>
+            <div>
+                <i class="fab fa-java text-yellow-600"></i>Desktop Developer
+            </div>
+        </div>
+        <div class="text-center lg:flex p-5 border-t-2 lg:justify-center">
+            <div class="md:mt-10 lg:mt-1">
+                <a class="text-blue-900 dark:text-blue-300 border-blue-400" href="https://www.facebook.com/khinmemelat">
+                    <i class="fab fa-fw fa-facebook-f"></i> Facebook
+                </a>
+            </div>
+            <div class="md:mt-10 lg:mt-1">
+                <a class="text-blue-900 dark:text-blue-300 pl-3" href="https://www.twitter.com/khinmemelatt">
+                    <i class="fab fa-twitter"></i> Twitter
+                </a>
+            </div>
+            <div class="md:mt-10 lg:mt-1">
+                <a class="text-blue-900 dark:text-blue-300 pl-3"
+                    href="https://www.linkedin.com/in/khin-me-me-latt-6729731ab/">
+                    <i class="fab fa-fw fa-linkedin-in"></i> LinkedIn
+                </a>
+            </div>
+            <div class="md:mt-10 lg:mt-1">
+                <a class="text-black dark:text-white pl-3" href="https://github.com/KhinMeMeLatt/">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+        <div id="about" class="w-2/3 h-max ml-40 lg:ml-60 mt-12 p-10
+                bg-gradient-to-r from-pink-400 to-purple-500 
+                dark:from-green-500 dark:to-blue-600
+                rounded-3xl shadow-2xl" data-aos="fade-in" data-aos-delay="30" data-aos-duration="4000"
+            data-aos-mirror="true" data-aos-easing="ease-in-out">
+            <h1 class="text-center">Who the hell am I?</h1>
+            <div class="text-center pb-5">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p>
+                I'm <a href="https://www.twitter.com/khinmemelatt" class="dark:text-yellow-400">Khin Me Me Latt</a>,
+                Software Engineering Student at <a href="https://www.uit.edu.mm/" class="dark:text-yellow-400">University of
+                    Information Technology</a>.
+            </p>
+            <p class="md:pt-10 lg:pt-5">
+                I develop website, desktop application and mobile application.
+            </p>
+            <p class="md:pt-10 lg:pt-5">
+                In 2019, I got a two-month internship at <a href="http://www.jaist.ac.jp/english/"
+                    class="dark:text-yellow-400">Japan Advanced Institute
+                    of Science and Technology (JAIST)</a>.
+            </p>
+            <p class="md:pt-10 lg:pt-5">
+                In 2020, I worked as an intern at <a href="https://www.ntt-at.com/" class="dark:text-yellow-400">NTT
+                    Advanced Technology Corporation</a>.
+                Now, I'm currently working there as a scholarship staff.
+            </p>
+        </div>
+        <div id="skills" class="w-2/3 h-max ml-40 lg:ml-60 mt-12 p-10 bg-gradient-to-r 
+            from-pink-400 to-purple-500 
+            dark:from-green-500 dark:to-blue-600
+            rounded-3xl shadow-2xl" data-aos="fade-up" data-aos-offset="200" data-aos-delay="20" data-aos-duration="1000"
+            data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"
+            data-aos-anchor-placement="top-center">
+            <h1 class="text-center">Skills</h1>
+            <div class="text-center pb-5">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <div class="grid md:grid-cols-1 lg:grid-cols-2 items-center">
+                <img src="img/MacBook.png">
+                <p>Build Modern Web Application using <span class="text-white dark:text-yellow-400">Laravel, Vue.js,
+                        Tailwind, JavaEE and Bootstrap</span></p>
+                <img src="img/iPhone.png">
+                <p>Develop Android application using <span class="text-white dark:text-yellow-400">Flutter and Google
+                        Developer Tools</span></p>
+                <img src="img/MacBook.png">
+                <p>Develop Windows application using <span class="text-white dark:text-yellow-400">C#, JavaSE and
+                        JavaFX</span></p>
+            </div>
+            <div class="col-span-2 w-full text-center md:pt-10 lg:pt-0">
+                <a href="https://github.com/KhinMeMeLatt/" class="dark:text-yellow-400">View Projects</a>
+            </div>
+        </div>
+        <div id="hobbies" class="w-2/3 h-max ml-40 lg:ml-60 mt-12 p-10 bg-gradient-to-r 
+            from-pink-400 to-purple-500 
+            dark:from-green-500 dark:to-blue-600
+            rounded-3xl shadow-2xl" data-aos="fade-up-right" data-aos-offset="200" data-aos-delay="20"
+            data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"
+            data-aos-anchor-placement="top-center">
+            <h1 class="text-center">Hobbies</h1>
+            <div class="text-center pb-5">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <div class="grid md:grid-cols-1 lg:grid-cols-3 items-center">
+                <img src="img/music.gif" class="pl-20 lg:pl-0">
+                <img src="img/travel.gif" class="rounded-lg pt-40 lg:pt-0">
+                <img src="img/badminton.gif" class="rounded-lg w-52 md:h-1/2 md:w-screen lg:h-52 lg:ml-5">
+            </div>
+        </div>
+        <footer>
+            <img src="img/Rock-on.png" class="opacity-90 w-full md:h-1/2" id="rockOn">
+            <h1
+                class="font-lobster text-6xl text-red-500 transform md:-translate-y-96 lg:-translate-y-80 md:ml-64 lg:ml-120 -skew-y-6">
+                Khin Me Me Latt</h1>
+        </footer>
+        <Scroll_up></Scroll_up>
+    </div>
+    <script src="js/app.js"></script>
+    <!-- <script>
+        $(window).load(function() {
+            console.log('loading');
+          $('#loading').hide();
+        });
+    </script> -->
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+@tailwind base;
+
+@tailwind components;
+
+@media (min-width: 768px) {
+    body {
+        font-size: 3.75rem;
+        line-height: 2;
+    }
+    h1{
+        font-size: 5rem;
+        line-height: 2;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    h1 {
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+    }
+}
+
+#navbar{
+
+    a{
+        display: inline-block;
+        text-decoration-style: wavy;
+    }
+    
+    a::after{
+        content: '';
+        width: 0px;
+        height: 1px;
+        display: block;
+        background: #f0cf13;
+        transition: 600ms;
+    }
+    
+    a:hover::after{
+        width: 100%;
+    }
+}
+
+#mobileNav{
+    z-index: 1;
+
+    li{
+        display: block;
+        padding-top: 70px;
+    }
+}
+
+ul{
+    li{
+        padding: 10px;
+    }
+}
+
+a{
+    color: white;
+}
+
+@media (min-width: 768px) {
+    #jobs {
+        div {
+            svg {
+                margin-left: 200px;
+                margin-top: 50px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    #jobs {
+        div {
+            svg {
+                margin-left: 80px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    footer {
+        #rockOn{
+            height: 800px;
+        }
+    }
+}
+@tailwind utilities;
