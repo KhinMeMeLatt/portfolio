@@ -14862,12 +14862,8 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     /* STABLE */
 
   })])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(vue__WEBPACK_IMPORTED_MODULE_0__.Transition, {
-    "enter-from-class": "opacity-0 translate-y-full",
-    "enter-active-class": "ease-in-out duration-700",
-    "enter-to-class": "opacity-100 translate-y-0",
-    "leave-from-class": "opacity-100 translate-y-0",
-    "leave-active-class": "ease-in-out duration-700",
-    "leave-to-class": "opacity-0 translate-y-full"
+    "enter-active-class": "animated bounceIn",
+    "leave-active-class": "animated hinge"
   }, {
     "default": _withId(function () {
       return [$data.on ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("ul", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {

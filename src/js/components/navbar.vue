@@ -40,12 +40,7 @@
     </div>
   </nav>
   <transition
-    enter-from-class="opacity-0 translate-y-full"
-    enter-active-class="ease-in-out duration-700"
-    enter-to-class="opacity-100 translate-y-0"
-    leave-from-class="opacity-100 translate-y-0"
-    leave-active-class="ease-in-out duration-700"
-    leave-to-class="opacity-0 translate-y-full"
+     enter-active-class="animated bounceIn" leave-active-class="animated hinge"
   >
     <ul id="mobileNav"
       class="font-semibold fixed w-screen h-screen bg-purple-500 text-center text-6xl lg:hidden"
