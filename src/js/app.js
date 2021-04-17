@@ -5,14 +5,12 @@ import { createApp } from 'vue';
 import AOS from 'aos';
 import Navbar from './components/navbar';
 import Scroll_up from './components/scrollUp';
-import loadingComponent from '../../loading.html';
 
 const app = createApp({
     components:  {
         Navbar,
         Scroll_up,
     },
-    loading: loadingComponent,
     mounted() {
         document.onreadystatechange = () => {
             if(document.readyState == "complete") {

@@ -3,6 +3,7 @@
     <img
       src="img/rabbit.png"
       class="w-1/6 h-1/6 lg:w-16 lg:h-16 transform transition duration-700 hover:scale-125"
+      id="logo"
     />
     <ul class="hidden lg:inline-flex font-semibold text-2xl" id="navbar">
       <li><a href="/" class="text-black dark:text-white" @click.prevent="show('about')">Who </a></li>
@@ -10,7 +11,7 @@
       <li><a href="" class="text-black dark:text-white" @click.prevent="show('hobbies')">Hobbies </a></li>
     </ul>
     <div class="hidden lg:flex lg:justify-around">
-      <img src="img/sun.png" class="w-1/3 h-2/3">
+      <img src="img/sun.png" class="w-10 h-10">
       <ThemeSwitch @darkTheme="changeTheme" v-bind:theme="currentTheme"></ThemeSwitch>
       <img src="img/moon.png" class="w-10 h-10 transform -translate-y-2">
     </div>

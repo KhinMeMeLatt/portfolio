@@ -14729,7 +14729,8 @@ var _hoisted_1 = {
 
 var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
   src: "img/rabbit.png",
-  "class": "w-1/6 h-1/6 lg:w-16 lg:h-16 transform transition duration-700 hover:scale-125"
+  "class": "w-1/6 h-1/6 lg:w-16 lg:h-16 transform transition duration-700 hover:scale-125",
+  id: "logo"
 }, null, -1
 /* HOISTED */
 );
@@ -14744,7 +14745,7 @@ var _hoisted_4 = {
 
 var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
   src: "img/sun.png",
-  "class": "w-1/3 h-2/3"
+  "class": "w-10 h-10"
 }, null, -1
 /* HOISTED */
 );
@@ -15017,12 +15018,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(aos__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _components_navbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/navbar */ "./src/js/components/navbar.vue");
 /* harmony import */ var _components_scrollUp__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/scrollUp */ "./src/js/components/scrollUp.vue");
-/* harmony import */ var _loading_html__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../loading.html */ "./loading.html");
-/* harmony import */ var _loading_html__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_loading_html__WEBPACK_IMPORTED_MODULE_4__);
 __webpack_require__(/*! ./fontawesome */ "./src/js/fontawesome.js");
 
 __webpack_require__(/*! ./typeWriter */ "./src/js/typeWriter.js");
-
 
 
 
@@ -15033,7 +15031,6 @@ var app = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createApp)({
     Navbar: _components_navbar__WEBPACK_IMPORTED_MODULE_2__.default,
     Scroll_up: _components_scrollUp__WEBPACK_IMPORTED_MODULE_3__.default
   },
-  loading: (_loading_html__WEBPACK_IMPORTED_MODULE_4___default()),
   mounted: function mounted() {
     document.onreadystatechange = function () {
       if (document.readyState == "complete") {
@@ -15301,74 +15298,6 @@ module.exports = function (cssWithMappingToString) {
   };
 
   return list;
-};
-
-/***/ }),
-
-/***/ "./img/loading.gif":
-/*!*************************!*\
-  !*** ./img/loading.gif ***!
-  \*************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/loading.gif?5509f0904df9b7a3657c7423761450a5");
-
-/***/ }),
-
-/***/ "./loading.html":
-/*!**********************!*\
-  !*** ./loading.html ***!
-  \**********************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-// Imports
-var ___HTML_LOADER_GET_SOURCE_FROM_IMPORT___ = __webpack_require__(/*! ./node_modules/html-loader/dist/runtime/getUrl.js */ "./node_modules/html-loader/dist/runtime/getUrl.js");
-var ___HTML_LOADER_IMPORT_0___ = __webpack_require__(/*! ./img/loading.gif */ "./img/loading.gif");
-// Module
-var ___HTML_LOADER_REPLACEMENT_0___ = ___HTML_LOADER_GET_SOURCE_FROM_IMPORT___(___HTML_LOADER_IMPORT_0___);
-var code = "<html lang=\"en\">\r\n    <head>\r\n        <title>Khin Me Me Latt</title>\r\n        <meta name=\"viewpoint\" content=\"width=device-width, initial-scale=1.0\">\r\n        <link rel=\"shortcut icon\" href=\"img/rabbit.png\" type=\"image/x-icon\">\r\n    </head>\r\n    <body>\r\n        <div id=\"loading\">\r\n            <img id=\"loading-image\" src=\"" + ___HTML_LOADER_REPLACEMENT_0___ + "\" alt=\"Loading...\" />\r\n        </div>\r\n    </body>\r\n</html>";
-// Exports
-module.exports = code;
-
-/***/ }),
-
-/***/ "./node_modules/html-loader/dist/runtime/getUrl.js":
-/*!*********************************************************!*\
-  !*** ./node_modules/html-loader/dist/runtime/getUrl.js ***!
-  \*********************************************************/
-/***/ ((module) => {
-
-"use strict";
-
-
-module.exports = function (url, options) {
-  if (!options) {
-    // eslint-disable-next-line no-param-reassign
-    options = {};
-  } // eslint-disable-next-line no-underscore-dangle, no-param-reassign
-
-
-  url = url && url.__esModule ? url.default : url;
-
-  if (typeof url !== 'string') {
-    return url;
-  }
-
-  if (options.hash) {
-    // eslint-disable-next-line no-param-reassign
-    url += options.hash;
-  }
-
-  if (options.maybeNeedQuotes && /[\t\n\f\r "'=<>`]/.test(url)) {
-    return "\"".concat(url, "\"");
-  }
-
-  return url;
 };
 
 /***/ }),
