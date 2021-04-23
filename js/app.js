@@ -14612,9 +14612,17 @@ __webpack_require__.r(__webpack_exports__);
     }
   },
   mounted: function mounted() {
-    var dt = new Date();
-    var currentTime = dt.getHours();
-    if (currentTime >= 18 || currentTime < 6) this.currentTheme = true;else this.currentTheme = false;
+    // var dt = new Date();
+    // var currentTime = dt.getHours();
+    // if(currentTime >= 18 || currentTime < 6)
+    //   this.currentTheme = true;
+    // else
+    //   this.currentTheme = false;
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      this.currentTheme = true;
+    } else {
+      this.currentTheme = false;
+    }
   }
 });
 
@@ -14729,7 +14737,7 @@ var _hoisted_1 = {
 
 var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
   src: "img/rabbit.png",
-  "class": "w-1/6 h-1/6 lg:w-16 lg:h-16 transform transition duration-700 hover:scale-125",
+  "class": "w-10 h-10 lg:w-16 lg:h-16 transform transition duration-700 hover:scale-125",
   id: "logo"
 }, null, -1
 /* HOISTED */
