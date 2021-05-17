@@ -28,20 +28,20 @@
     a{
         display: inline-block;
         text-decoration-style: wavy;
-    }
-    
-    a::after{
-        content: '';
-        width: 0px;
-        height: 1px;
-        display: block;
-        background: #f0cf13;
-        transition: 600ms;
-    }
-    
-    a:hover::after{
-        width: 100%;
-    }
+
+        &::after {
+            content: '';
+            width: 0px;
+            height: 1px;
+            display: block;
+            background: #f0cf13;
+            transition: 600ms;
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+    }    
 }
 
 #logo {
