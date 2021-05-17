@@ -2,7 +2,7 @@
   <nav class="flex justify-between p-5">
     <img
       src="img/rabbit.png"
-      class="w-1/6 h-1/6 lg:w-16 lg:h-16 transform transition duration-700 hover:scale-125"
+      class="w-10 h-10 lg:w-16 lg:h-16 transform transition duration-700 hover:scale-125"
       id="logo"
     />
     <ul class="hidden lg:inline-flex font-semibold text-2xl" id="navbar">
@@ -75,7 +75,7 @@ import 'sweetalert2/src/sweetalert2.scss';
 export default {
   components: {
     ThemeSwitch,
-    Swal
+    Swal,
   },
   data() {
     return {
@@ -109,12 +109,20 @@ export default {
     }
   },
   mounted() {
-    var dt = new Date();
-    var currentTime = dt.getHours();
-    if(currentTime >= 18 || currentTime < 6)
+    //Change theme according to local Time
+    // var dt = new Date();
+    // var currentTime = dt.getHours();
+    // if(currentTime >= 18 || currentTime < 6)
+    //   this.currentTheme = true;
+    // else
+    //   this.currentTheme = false;
+
+    //Change theme according to operating system preference
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       this.currentTheme = true;
-    else
+    } else {
       this.currentTheme = false;
+    }
   }
 };
 </script>

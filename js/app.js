@@ -14612,13 +14612,15 @@ __webpack_require__.r(__webpack_exports__);
     }
   },
   mounted: function mounted() {
+    //Change theme according to local Time
     // var dt = new Date();
     // var currentTime = dt.getHours();
     // if(currentTime >= 18 || currentTime < 6)
     //   this.currentTheme = true;
     // else
     //   this.currentTheme = false;
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    //Change theme according to operating system preference
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       this.currentTheme = true;
     } else {
       this.currentTheme = false;
