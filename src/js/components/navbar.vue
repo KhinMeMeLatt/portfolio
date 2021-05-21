@@ -123,6 +123,12 @@ export default {
     } else {
       this.currentTheme = false;
     }
+    this.currentTheme = (localStorage.currentTheme == 'true');
+  },
+  watch: {
+    currentTheme: function(newTheme, oldTheme) {
+      localStorage.currentTheme = newTheme;
+    }
   }
 };
 </script>

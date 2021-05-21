@@ -14625,6 +14625,13 @@ __webpack_require__.r(__webpack_exports__);
     } else {
       this.currentTheme = false;
     }
+
+    this.currentTheme = localStorage.currentTheme == 'true';
+  },
+  watch: {
+    currentTheme: function currentTheme(newTheme, oldTheme) {
+      localStorage.currentTheme = newTheme;
+    }
   }
 });
 
