@@ -14626,7 +14626,9 @@ __webpack_require__.r(__webpack_exports__);
       this.currentTheme = false;
     }
 
-    this.currentTheme = localStorage.currentTheme == 'true';
+    if (localStorage.currentTheme) {
+      this.currentTheme = localStorage.currentTheme == 'true';
+    }
   },
   watch: {
     currentTheme: function currentTheme(newTheme, oldTheme) {

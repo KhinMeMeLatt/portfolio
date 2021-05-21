@@ -123,7 +123,10 @@ export default {
     } else {
       this.currentTheme = false;
     }
-    this.currentTheme = (localStorage.currentTheme == 'true');
+
+    if(localStorage.currentTheme){
+      this.currentTheme = (localStorage.currentTheme == 'true');
+    }
   },
   watch: {
     currentTheme: function(newTheme, oldTheme) {
