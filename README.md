@@ -9,6 +9,8 @@ This website is hosted on [Netlify](https://www.netlify.com/).
 
 https://khinmemelatt.netlify.app/
 
+https://khinmemelatt.tech
+
 ### Build with
 - [Vuejs](https://vuejs.org/v2/guide/)
 - [Tailwind css](https://tailwindcss.com/docs)
