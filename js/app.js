@@ -14605,7 +14605,7 @@ __webpack_require__.r(__webpack_exports__);
     emailMe: function emailMe() {
       sweetalert2_dist_sweetalert2_js__WEBPACK_IMPORTED_MODULE_1___default().fire({
         title: "<strong class='text-6xl'>Email Me :</strong><br>",
-        html: '<a href="mailto:khinmemelatt@outlook.com" class="text-black underline text-5xl">khinmemelatt@outlook.com</a>',
+        html: '<a href="mailto:khinmemelatt1021@duck.com" class="text-black underline text-5xl">khinmemelatt1021@duck.com</a>',
         width: 800,
         showConfirmButton: false
       });
