@@ -9,6 +9,8 @@ This website is hosted on [Netlify](https://www.netlify.com/).
 
 https://khinmemelatt.netlify.app/
 
+https://khinmemelatt.vercel.app/
+
 https://khinmemelatt.tech
 
 ### Build with
